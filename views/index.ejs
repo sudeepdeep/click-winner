@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+       const user = "<%= user%>"
+   </script>
+    <script src="/socket.io/socket.io.js"></script>
+   
+</head>
+
+<style>
+        body{
+            background-color: #033249;
+        }
+        .main{
+            text-align: center;
+            color: white;
+            margin-top: 3%;
+        }
+        #btn{
+            width: 150px;
+            height: 50px;
+            margin-top: 15px;
+            background-color: #FF8038;
+            border: 0px solid black;
+            color: white;
+        }
+        #btn:hover{
+            background-color: #fff;
+            color: black;
+        }
+</style>
+
+
+<body>
+    <div class="main">
+        <h1><img src = "*/images/click logo.png" alt="click logo"></h1>
+        <div class="mobile">
+            <form action="http://localhost:3000/starting" method="POST">
+                <input type="text" id = "name" name="name" placeholder="Enter Your Name" /> <br>
+                <input type = "submit" value = "Let's Start" id = "btn">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
